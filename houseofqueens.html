@@ -319,26 +319,22 @@
         <p class="section-subtitle">Think you have what it takes? Apply to join the collective.</p>
         
         <div class="form-container">
-            <form onsubmit="event.preventDefault(); alert('Application Received! We will review your submission shortly.');">
+            <form action="https://formspree.io/f/tallcelestia@gmail.com" method="POST">
                 <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="Enter your full name" required>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="Full Name" placeholder="Enter your full name" required>
                 </div>
                 <div class="form-group">
-                    <label>Instagram / TikTok Handle</label>
-                    <input type="text" placeholder="@yourhandle" required>
+                    <label for="handle">Instagram / TikTok Handle</label>
+                    <input type="text" id="handle" name="Social Handle" placeholder="@yourhandle" required>
                 </div>
                 <div class="form-group">
-                    <label>WhatsApp / Phone Number</label>
-                    <input type="tel" placeholder="+27 ..." required>
+                    <label for="phone">WhatsApp / Phone Number</label>
+                    <input type="tel" id="phone" name="Phone Number" placeholder="+27 ..." required>
                 </div>
                 <div class="form-group">
-                    <label>Portfolio / Photo Link (Drive/Dropbox)</label>
-                    <input type="url" placeholder="https://">
-                </div>
-                <div class="form-group">
-                    <label>Why do you want to join House of Queens?</label>
-                    <textarea rows="4" placeholder="Tell us briefly about yourself and your modeling goals..."></textarea>
+                    <label for="statement">Why do you want to join House of Queens?</label>
+                    <textarea id="statement" name="Application Statement" rows="4" placeholder="Tell us briefly about yourself and your modeling goals..."></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Submit Application</button>
             </form>
